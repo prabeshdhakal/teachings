@@ -7,7 +7,7 @@
 ## Lecturers and Tutors
 
 **Lecturer:**
-* [Henrik von Wherden](www.henrikvonwherden.leuphana.de)
+* Henrik von Wherden
 
 **Tutors:**
 * Prabesh Dhakal
