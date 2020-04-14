@@ -11,7 +11,7 @@
 
 **Tutors:**
 * [Prabesh Dhakal](www.prabeshdhakal.com)
-* [Lisa Gotzian](www.lisagotzian.com)
+* ![Lisa Gotzian](www.lisagotzian.com)
 * Julius Rathgens
 * John Oliver-Engler
 * Chan Le
