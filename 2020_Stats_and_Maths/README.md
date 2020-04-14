@@ -10,8 +10,8 @@
 * [Henrik von Wherden](www.henrikvonwherden.leuphana.de)
 
 **Tutors:**
-* [Prabesh Dhakal](www.prabeshdhakal.com)
-* ![Lisa Gotzian](www.lisagotzian.com)
+* Prabesh Dhakal
+* Lisa Gotzian
 * Julius Rathgens
 * John Oliver-Engler
 * Chan Le
