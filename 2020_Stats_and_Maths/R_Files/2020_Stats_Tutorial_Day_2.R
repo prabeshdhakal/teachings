@@ -1,4 +1,4 @@
-# Statistics Tutorial - Day 1 - Walkthrough
+# Statistics Tutorial - Day 2 - Walkthrough
 # Created By: Prabesh Dhakal on 2020-04-14
 # Last Edited: 2020-04-15
 
@@ -138,6 +138,9 @@ plot(wind, temp)
 help(plot)
 
 plot(x=wind, y=temp, main="Temp vs Wind Speed")
+
+
+#-------------------------------------------------------------------------#
 
 
 #### Tasks for you ####
