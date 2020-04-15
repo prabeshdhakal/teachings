@@ -142,5 +142,6 @@ plot(x=wind, y=temp, main="Temp vs Wind Speed")
 
 #### Tasks for you ####
 
-# 1. Load a dataset called "mtcars"
-# 2. Make a box plot of "mpg" column from the mtcars dataset
+# 1. Load a dataset called "mtcars".
+# 2. Calculate summary statistics and try to understand the results.
+# 3. Make a box plot of "mpg" column from the mtcars dataset.
