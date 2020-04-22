@@ -1,6 +1,6 @@
-# Statistics Tutorial - Day 2 - Walkthrough
+# Statistics Tutorial - Day 2 & 3 - Walkthrough
 # Created By: Prabesh Dhakal on 2020-04-14
-# Last Edited: 2020-04-15
+# Last Edited: 2020-04-23
 
 
 #### Goals: ####
@@ -112,35 +112,60 @@ my_seq = seq(1, 5, 1) # a sequence
 
 #-------------------------------------------------------------------------#
 
-#### 3. Install Packages, Use Functions ####
+#### 3. Use R with the list of numbers ####
+
+num_list <- c(17, 12, 14, 7, 8, 19, 23, 19, 10, 7, 12, 7, 12)
+
+num_list_sorted <- sort(num_list, decreasing=FALSE) # use the sort function
+
+N <- length(num_list) # the number of items in the list
+
+num_list_sum <- sum(num_list)
+
+num_list_mean <- num_list_sum / N # mean
+
+# R provides many statistical functions
+mean(num_list)
+
+var(num_list)
+
+sd(num_list)
+
+median(num_list)
+
+boxplot(num_list)
+
+# what if a statistical function is not available on R?
+# => Packages!
+
+#-------------------------------------------------------------------------#
+
+#### 4. Install Packages, Use Functions ####
 
 
-# 3.1 Install and Load a Package
+# 4.1 Install and Load a Package
 
-install.packages("swirl")
+install.packages("swirl") # install a package
 
-library(swirl)
+library(swirl) # load a library
 
-# 3.2 Use functions that come with R (built-in functions)
+# 4.2 Use functions that come with R (built-in functions)
 
 airquality # a built-in dataset
 
 str(airquality) # inspect the structure of the dataset
 summary(airquality) # get summary statistics
 
-# 3.3 Make a plot
+# 4.3 Make a plot
 wind <- airquality$Wind # extract colmns with column names
 temp <- airquality[, 4] # extract columns with column number
 
 plot(wind, temp)
 
-# 3.4 Heeelp!
+# 4.4 Heeelp!
 help(plot)
 
 plot(x=wind, y=temp, main="Temp vs Wind Speed")
-
-
-#-------------------------------------------------------------------------#
 
 
 #### Tasks for you ####
