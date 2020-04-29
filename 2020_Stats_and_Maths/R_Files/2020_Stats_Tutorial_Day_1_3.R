@@ -1,6 +1,6 @@
-# Statistics Tutorial - Day 2 & 3 - Walkthrough
+# Statistics Tutorial - Day 1 / 4 - Walkthrough
 # Created By: Prabesh Dhakal on 2020-04-14
-# Last Edited: 2020-04-23
+# Last Edited: 2020-04-29
 
 
 #### Goals: ####
@@ -114,7 +114,7 @@ my_seq = seq(1, 5, 1) # a sequence
 
 #### 3. Use R with the list of numbers ####
 
-num_list <- c(17, 12, 14, 7, 8, 19, 23, 19, 10, 7, 12, 7, 12)
+num_list <- c(17, 12, 14, 7, 8, 19, 23, 19, 10, 7, 12, 7, 1200)
 
 num_list_sorted <- sort(num_list, decreasing=FALSE) # use the sort function
 
@@ -126,17 +126,36 @@ num_list_mean <- num_list_sum / N # mean
 
 # R provides many statistical functions
 mean(num_list)
+median(num_list)
+
+
+max(num_list)
+min(num_list)
 
 var(num_list)
 
 sd(num_list)
 
-median(num_list)
+
+quantile(num_list, c(0.25, 0.5, 0.75)) # all quartiles
+
+num_list_summary = summary(num_list)
+num_list_summary[2]
+num_list_summary[5]
+
+
 
 boxplot(num_list)
+hist(num_list) # notice how the large value skews the distribution
 
 # what if a statistical function is not available on R?
 # => Packages!
+
+BBmisc::computeMode(num_list)
+
+library(stats)
+mad(num_list) # median absolute deviation
+mad(num_list, center=mean(num_list)) # mean absolute deviation
 
 #-------------------------------------------------------------------------#
 
@@ -175,3 +194,4 @@ plot(x=wind, y=temp, main="Temp vs Wind Speed")
 # 3. Make a box plot of "mpg" column/variable from the mtcars dataset.
 # 4. Are there any outliers in the mpg variable? 
 #    What about hp variable in the mtcars data?
+
