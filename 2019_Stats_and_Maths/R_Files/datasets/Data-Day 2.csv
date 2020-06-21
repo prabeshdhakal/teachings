@@ -1,0 +1,21 @@
+id,start_reference,distance_km,mood,transport_medium
+1,E,2,good,on foot
+2,N,3,good,bike
+3,N,3,okay,bike
+4,N,2,good,bike
+5,N,3,okay,bike
+6,N,0,good,on foot
+7,N,2,good,bike
+8,N,2,good,other
+9,E,2,good,bike
+10,W,3,okay,on foot
+11,N,3,good,bus
+12,N,3.5,good,on fut
+13,N,3,good,bus
+14,S,3,good,bike train
+15,N,55,okay,bike
+16,N,2,okay,train
+17,N,85,okay,bike
+18,W,4,okay,car
+19,N,40,okay,bike
+20,N,3,good,bike
