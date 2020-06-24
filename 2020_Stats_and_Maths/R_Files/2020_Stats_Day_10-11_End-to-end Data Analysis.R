@@ -1,6 +1,6 @@
 # Statistics Tutorial - Day 10 - (Almost) End-to-end Data Analysis
 # Created By: Prabesh Dhakal on 2020-06-17
-# Last Edited: 2020-06-17
+# Last Edited: 2020-06-18
 
 ##### Goals: ####
 
@@ -84,10 +84,10 @@ b_pres_labs = c("Pressure: 8 MPa", "Pressure: 10 MPa", "Pressure: 12 MPa")
 names(b_pres_labs) <- c("8", "10", "12")
 
 temp_box_plot <- ggplot(df, aes(x=b_temp, y=meth_pct)) +
-    geom_boxplot() +
-    facet_grid(~b_pres, labeller=labeller(b_pres=b_pres_labs)) + 
-    ggtitle("Box Plots for the Yield of Methanol") +
-    labs(x="Temperature Levels", y="Yield Percentages")
+  geom_boxplot() +
+  facet_grid(~b_pres, labeller=labeller(b_pres=b_pres_labs)) + 
+  ggtitle("Box Plots for the Yield of Methanol") +
+  labs(x="Temperature Levels", y="Yield Percentages")
 temp_box_plot
 
 # Save the plot (optional)
@@ -100,11 +100,11 @@ mean_vals <- ddply(df, "b_temp", summarise, grp.mean=mean(meth_pct))
 head(mean_vals)
 
 density_plots <- ggplot(df, aes(x=meth_pct, color=b_temp)) + 
-    geom_density() +
-    geom_vline(data=mean_vals, aes(xintercept=grp.mean, color=b_temp),
-               linetype="dashed") + 
-    ggtitle("Density Plots for the Yield of Methanol \n (at different temperatures)") +
-    labs(x="methanol Yield Percentage", y="Density")
+  geom_density() +
+  geom_vline(data=mean_vals, aes(xintercept=grp.mean, color=b_temp),
+             linetype="dashed") + 
+  ggtitle("Density Plots for the Yield of Methanol \n (at different temperatures)") +
+  labs(x="methanol Yield Percentage", y="Density")
 density_plots
 
 # Tasks:
