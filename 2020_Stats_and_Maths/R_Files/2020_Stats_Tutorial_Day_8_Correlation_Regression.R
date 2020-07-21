@@ -16,7 +16,9 @@ student_attitude <- c(94,73,59,80,93,85,66,79,77,91) # a vector
 correct_answers <- c(17,13,12,15,16,14,16,16,18,19) # a vector
 student_df <- data.frame(student_attitude, correct_answers) # a dataframe
 
-
+plot(student_attitude, correct_answers)
+cor(student_attitude, correct_answers)
+cor.test(student_attitude, correct_answers)
 
 #### 1. Correlation ####
 plot(density(student_attitude))

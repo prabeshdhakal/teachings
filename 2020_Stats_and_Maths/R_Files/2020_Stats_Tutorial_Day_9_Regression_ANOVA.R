@@ -60,11 +60,12 @@ summary(model_cars) # 0.6438 -> what does this figure mean?
 # make predictions using our linear model
 cars$speed
 
+
 # 8 new observations for speeds of cars
 new_car_speeds <- c(100, 70, 10, 9, 7, 4, 3, 0) 
 
 # create a data frame with same column header
-new_speeds <- data.frame(speed = new_car_speeds)
+new_speeds <- data.frame(speed = new_car_speeds, row.names=99)
 
 # perform a prediction using the model and new data
 pred_dist <- predict(model_cars, new_speeds)
